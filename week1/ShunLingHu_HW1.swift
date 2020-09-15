@@ -234,7 +234,7 @@ for myfriend in myFriends {
 there is no index 5 friends,system will show:out of range
 */
 //7.
-myFriends[1]
+myFriends[0]
 
 //8.
 myFriends.last
@@ -259,19 +259,13 @@ print(myCountryNumber)
 //CONTROL FLOW
 //1.
 
-let lottoNumber = [10,9,8,7,6,5]
-for x in lottoNumber{
+let lottoNumber = 5
+for x in lottoNumber...lottoNumber+6 {
     if x <= 7 {
         print (x)
     }
 }
-//var countx = 0
-//for x in lottoNumber {
-//    countx = countx+1
-//    if(countx >= lottoNumber.count-2){
-//        print(x)
-//    }
-//}
+
 print ("----")
 
 //3.
@@ -303,8 +297,7 @@ if isRaining == true {
 else {print ("Although it’s sunny, I still don’t want to work today.")
 }
 //7.
-
-var jobLevel = ("Member" , 0 )
+var jobLevel = ("Member" , 1)
 
 switch jobLevel{
 case ("Member",1 ):
@@ -313,9 +306,12 @@ case ("Team Leader",2):
     print("you are job 2")
 case ("Manager",3):
     print("you are job 3")
+case ("Doctor",4):
+    print("you are job 4")
 default:
     print("We don't have this job")
 }
+
 //Function
 
 //1
