@@ -295,7 +295,7 @@ if isRaining == true {
 else {print ("Although it’s sunny, I still don’t want to work today.")
 }
 //7.
-var jobLevel = 1
+var jobLevel = 3
 
 switch jobLevel{
 case (1) :
