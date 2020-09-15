@@ -259,11 +259,9 @@ print(myCountryNumber)
 //CONTROL FLOW
 //1.
 
-let lottoNumber = 5
-for x in lottoNumber...lottoNumber+6 {
-    if x <= 7 {
-        print (x)
-    }
+let lottoNumbers = [10,9,8,7,6,5]
+for number in lottoNumbers.count-3...lottoNumbers.count-1 {
+    print(lottoNumbers[number])
 }
 
 print ("----")
@@ -297,17 +295,17 @@ if isRaining == true {
 else {print ("Although it’s sunny, I still don’t want to work today.")
 }
 //7.
-var jobLevel = ("Member" , 1)
+var jobLevel = 1
 
 switch jobLevel{
-case ("Member",1 ):
-    print("you are job 1")
-case ("Team Leader",2):
-    print("you are job 2")
-case ("Manager",3):
-    print("you are job 3")
-case ("Doctor",4):
-    print("you are job 4")
+case (1) :
+    print("your position is Member")
+case (2):
+    print("your position is Team Leader")
+case (3):
+    print("your position is Manager")
+case (4):
+    print("your position is Doctor")
 default:
     print("We don't have this job")
 }
