@@ -43,7 +43,7 @@ class ViewController: UIViewController {
            passWord.backgroundColor = UIColor.white
            check.backgroundColor = UIColor.lightGray
            checkLabel.textColor = UIColor.lightGray
-           
+           checkLabel.isEnabled = false
             
         case 1:
             print("sign up Segment Selected")
