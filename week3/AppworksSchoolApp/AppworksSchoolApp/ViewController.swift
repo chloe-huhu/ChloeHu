@@ -9,7 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    //連動segment control與button之間
     var status : String = ""
 
     @IBOutlet weak var logInSignUp : UISegmentedControl!
@@ -24,9 +25,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       //button.isEnabled = false
-        check.isEnabled = false
+        
         account.backgroundColor = UIColor.white
+        
         passWord.backgroundColor = UIColor.white
+        
+        check.isEnabled = false
         check.backgroundColor = UIColor.lightGray
         checkLabel.textColor = UIColor.lightGray
           }
@@ -37,22 +41,29 @@ class ViewController: UIViewController {
         {
         case 0:
            print("log in Segment Selected")
-           status = "login"
-           check.isEnabled = false
+           
            account.backgroundColor = UIColor.white
            passWord.backgroundColor = UIColor.white
+            
+           check.isEnabled = false
+           check.text = " "
            check.backgroundColor = UIColor.lightGray
            checkLabel.textColor = UIColor.lightGray
            checkLabel.isEnabled = false
-            
+            status = "login"
+       
         case 1:
             print("sign up Segment Selected")
-            check.isEnabled = true
+            
             account.backgroundColor = UIColor.white
             passWord.backgroundColor = UIColor.white
+            
+            check.isEnabled = true
             check.backgroundColor = UIColor.white
             checkLabel.textColor = UIColor.black
+            
             status = "signup"
+       
         default:
             break
         }
@@ -60,8 +71,6 @@ class ViewController: UIViewController {
     
     
     @IBAction func textFieldEditingDidChange(_ sender: Any) {
-       print("chloe")
-
    }
 
    @IBAction func buttonPressed(_ sender: Any)  {
